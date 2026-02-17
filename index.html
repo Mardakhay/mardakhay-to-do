@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mardakhay To-Do</title>
+    <meta name="description" content="A clean, Notion-inspired task manager by Mardakhay.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1 class="welcome-heading">Welcome to Mardakhay to-do!</h1>
+
+    <div class="container">
+
+        <section class="input-section" aria-label="Add a new task">
+            <div class="input-row">
+                <input type="text" id="taskInput" placeholder="Write a task…" aria-label="Task name">
+                <select id="prioritySelect" aria-label="Priority level">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button id="addBtn" aria-label="Add task">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                    <span>Add</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="filter-section" aria-label="Filter and search tasks">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="high">High Priority</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+            <div class="search-box">
+                <svg class="search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" id="searchInput" placeholder="Search…" aria-label="Search tasks">
+            </div>
+        </section>
+
+        <main id="taskList" class="task-list" aria-label="Task list">
+        </main>
+
+        <footer class="footer">
+            <div class="stats">
+                <span>Total: <strong id="totalCount">0</strong></span>
+                <span class="stat-divider">·</span>
+                <span>High: <strong id="highCount">0</strong></span>
+            </div>
+            <button id="clearCompleted" class="clear-btn">Clear completed</button>
+        </footer>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
