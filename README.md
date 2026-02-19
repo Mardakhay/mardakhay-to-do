@@ -4,7 +4,7 @@ A clean, Notion-inspired task manager built with vanilla HTML, CSS, and JavaScri
 
 ---
 
-## ✨ Features
+## Features
 
 | Feature | Description |
 |---|---|
@@ -21,7 +21,7 @@ A clean, Notion-inspired task manager built with vanilla HTML, CSS, and JavaScri
 
 ---
 
-## 📁 File Structure
+## File Structure
 
 ```
 mardakhay to-do!/
@@ -33,7 +33,7 @@ mardakhay to-do!/
 
 ---
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 The app follows a **single-page, no-framework** architecture:
 
@@ -54,7 +54,7 @@ All JavaScript is wrapped in an **Immediately Invoked Function Expression (IIFE)
 
 ---
 
-## 📦 Data Model
+## Data Model
 
 Each task is a plain JavaScript object:
 
@@ -71,7 +71,7 @@ Tasks are stored in an in-memory array — **there is no persistence** (refreshi
 
 ---
 
-## ⚙️ Core Functions — `app.js`
+## Core Functions — `app.js`
 
 ### Rendering
 
@@ -100,7 +100,7 @@ Tasks are stored in an in-memory array — **there is no persistence** (refreshi
 
 ---
 
-## 🎨 Design System — `styles.css`
+## Design System — `styles.css`
 
 ### CSS Custom Properties (Design Tokens)
 
@@ -129,7 +129,7 @@ Tasks are stored in an in-memory array — **there is no persistence** (refreshi
 
 ---
 
-## 🧩 HTML Semantics — `index.html`
+## HTML Semantics — `index.html`
 
 - `<section>` elements with `aria-label` for the input area and filter bar.
 - `<main>` wraps the task list for screen-reader landmark navigation.
@@ -139,7 +139,7 @@ Tasks are stored in an in-memory array — **there is no persistence** (refreshi
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 1. **Clone or download** the project folder.
 2. **Open** `index.html` in any modern browser — no server required.
@@ -149,16 +149,6 @@ Tasks are stored in an in-memory array — **there is no persistence** (refreshi
 
 ---
 
-## 🛠️ Possible Enhancements
-
-- **LocalStorage persistence** — save and load tasks across page refreshes.
-- **Drag-and-drop reordering** — let users rearrange task priority visually.
-- **Due dates** — add a date picker and sort/filter by deadline.
-- **Dark mode** — toggle between light and dark themes using CSS custom properties.
-- **Edit in place** — double-click a task to rename it inline.
-
----
-
-## 📄 License
+## License
 
 This project is for personal / educational use by **Mardakhay**.
